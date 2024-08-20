@@ -13,5 +13,5 @@ This Django project reads CSV data from the provided dataset, creates correspond
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/sudda98/octopus_bi.git
-cd your-repo
+
 
