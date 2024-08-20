@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment List</title>
+</head>
+<body>
+    <h1>Assignment List</h1>
+    <ul>
+        {% for assignment in assignments %}
+            <li>{{ assignment.assignment_name }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'home' %}">Home</a>
+</body>
+</html>

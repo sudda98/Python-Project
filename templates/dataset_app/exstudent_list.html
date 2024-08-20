@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ex-Student List</title>
+</head>
+<body>
+    <h1>Ex-Student List</h1>
+    <ul>
+        {% for exstudent in exstudents %}
+            <li>{{ exstudent.student_name }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'home' %}">Home</a>
+</body>
+</html>

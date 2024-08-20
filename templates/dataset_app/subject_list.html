@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subject List</title>
+</head>
+<body>
+    <h1>Subject List</h1>
+    <ul>
+        {% for subject in subjects %}
+            <li>{{ subject.subject_name }} - {{ subject.subject_score }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'home' %}">Home</a>
+</body>
+</html>

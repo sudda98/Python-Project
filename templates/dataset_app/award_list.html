@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Award List</title>
+</head>
+<body>
+    <h1>Award List</h1>
+    <ul>
+        {% for award in awards %}
+            <li>{{ award.name }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'home' %}">Home</a>
+</body>
+</html>

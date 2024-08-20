@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Answer List</title>
+</head>
+<body>
+    <h1>Answer List</h1>
+    <ul>
+        {% for answer in answers %}
+            <li>{{ answer.answer_text }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'home' %}">Home</a>
+</body>
+</html>

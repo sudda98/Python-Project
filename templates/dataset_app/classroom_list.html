@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classroom List</title>
+</head>
+<body>
+    <h1>Classroom List</h1>
+    <ul>
+        {% for classroom in classrooms %}
+            <li>{{ classroom.class_name }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'home' %}">Home</a>
+</body>
+</html>
